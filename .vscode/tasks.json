@@ -8,8 +8,15 @@
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
-				"-O2", // For Fast Compilng
-				// "-Og", // For Debugging
+				//"-O2", // For Fast Compilng
+				"-Og", // For Debugging
+				"-pedantic-errors", // For more strict error checking
+				"-Wall", // MORE WARNINGS \/
+				"-Weffc++",
+				"-Wextra",
+				"-Wconversion",
+				"-Wsign-conversion", // MORE WARNINGS ^
+				"-Werror", // Warnings = Error
 				"${file}",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
