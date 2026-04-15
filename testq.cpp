@@ -4,15 +4,16 @@
 #include <cstdio>
 #include <cstdlib>
 
+int absolute_value(int x) {
+    if (x > 0) return x;
+    return -x;
+    
+}
+
+
 int main() {
-    int x = 10;
-    if (x>0) {
-        std::cout << "x is greater than 0\n";
-    } else if (x<0) {
-        std::cout << "x is less than 0\n";
-    } else {
-        std::cout << "x is equal to 0\n";
-    }
+    int x = -10;
+    std::cout << "the absolute value of " << x << " is: " << absolute_value(x) << "\n";
     return 0;
 
 
